@@ -1,0 +1,106 @@
+;/*
+;  LCD user defined characters demo
+;
+;  CodeVisionAVR C Compiler
+;  (C) 2000-2007 HP InfoTech S.R.L.
+;  www.hpinfotech.ro
+;
+;  Chip: ATmega8515
+;  Memory Model: SMALL
+;  Data Stack Size: 128 bytes
+;
+;  Use an 2x16 alphanumeric LCD connected
+;  to the STK500 PORTC header as follows:
+;
+;  [LCD]   [STK500 PORTC HEADER]
+;   1 GND- 9  GND
+;   2 +5V- 10 VCC
+;   3 VLC- LCD contrast control voltage 0..1V
+;   4 RS - 1  PC0
+;   5 RD - 2  PC1
+;   6 EN - 3  PC2
+;  11 D4 - 5  PC4
+;  12 D5 - 6  PC5
+;  13 D6 - 7  PC6
+;  14 D7 - 8  PC7
+;*/
+;
+;
+;// Alphanumeric LCD Module functions
+;// The LCD connections are specified in the
+;// Project|Configure|C Compiler|Libraries|Alphanumeric menu
+;#include <alcd.h>
+;#include "customCharsCG.h"
+;
+;typedef unsigned char byte;
+;
+;
+;
+;void main(void)
+; 0000 0028 {
+
+	.CSEG
+;PCODE: $00000000 VOL: 0
+; 0000 0029 char i ;
+; 0000 002A // initialize the LCD for
+; 0000 002B // 2 lines & 16 columns
+; 0000 002C lcd_init(16);
+;	i -> R17
+;PCODE: $00000001 VOL: 0
+;PCODE: $00000002 VOL: 0
+; 0000 002D 
+; 0000 002E init_fingerPrint_char();
+;PCODE: $00000003 VOL: 0
+; 0000 002F init_power_char();
+;PCODE: $00000004 VOL: 0
+; 0000 0030 init_battery_char();
+;PCODE: $00000005 VOL: 0
+; 0000 0031 init_switch_char();
+;PCODE: $00000006 VOL: 0
+; 0000 0032 init_locked_char();
+;PCODE: $00000007 VOL: 0
+; 0000 0033 init_unlocked_char();
+;PCODE: $00000008 VOL: 0
+; 0000 0034 init_smilie_char();
+;PCODE: $00000009 VOL: 0
+; 0000 0035 
+; 0000 0036 
+; 0000 0037 // switch to writing in Display RAM
+; 0000 0038 lcd_gotoxy(0,0);
+;PCODE: $0000000A VOL: 0
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;PCODE: $0000000D VOL: 0
+; 0000 0039 // display the user defined characters
+; 0000 003A lcd_putsf("User defined\nchar 0:");
+;PCODE: $0000000E VOL: 0
+;PCODE: $0000000F VOL: 0
+;PCODE: $00000010 VOL: 0
+; 0000 003B // display the user defined char 0
+; 0000 003C 
+; 0000 003D for (i = 0; i< 8; i++)
+;PCODE: $00000011 VOL: 0
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+;PCODE: $00000014 VOL: 0
+;PCODE: $00000015 VOL: 0
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+; 0000 003E lcd_putchar(i);
+;PCODE: $0000001A VOL: 0
+;PCODE: $0000001B VOL: 0
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+;PCODE: $00000020 VOL: 0
+; 0000 0040 while (1);
+;PCODE: $00000021 VOL: 0
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+; 0000 0041 }
+;PCODE: $00000024 VOL: 0
+;PCODE: $00000025 VOL: 0
+;PCODE: $00000026 VOL: 0

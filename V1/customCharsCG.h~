@@ -1,0 +1,13 @@
+
+
+void init_mu(void);
+
+void init_externalPower(void);
+
+void init_externalPower(void);
+
+void init_theif(void);
+
+void init_charging(void);
+
+void init_onBatter(void);

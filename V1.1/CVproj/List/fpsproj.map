@@ -1,0 +1,44 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+rx_counter                                                        0x0160       1
+mV                                                                0x0161       2
+cpuHaltAllowed                                                    0x0163       1
+powerMode                                                         0x0164       1
+junkFreeTimer                                                     0x0165       1
+autoSleepTimer                                                    0x0166       1
+dontWDR                                                           0x0167       1
+elapsed_sec                                                       0x0168       2
+rx_buffer                                                         0x016A      16
+tx_buffer                                                         0x017A      16
+elapsed_us                                                        0x018A       2
+elapsed_ms                                                        0x018C       2
+txPacket                                                          0x018E      12
+rxPacket                                                          0x019A      12
+_base_y                                                           0x01A6       4
+_lcd_y                                                            0x01AA       1
+_lcd_maxx                                                         0x01AB       1
+_seed                                                             0x01AC       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+resetByWDT                                                        0x0000       1
+failedCount                                                       0x0001       1
+fpsCount                                                          0x0002       2
+securityMethod                                                    0x0004       1
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+menuOpt                                                           R5           1
+refreshMenu                                                       R4           1
+adc_data                                                          R6,R7        2
+rx_wr_index                                                       R9           1
+rx_rd_index                                                       R8           1
+rx_buffer_overflow                                                R2.0      1bit
+tx_wr_index                                                       R11          1
+tx_rd_index                                                       R10          1
+tx_counter                                                        R13          1
+inPowerLoop                                                       R2.1      1bit
+_lcd_x                                                            R12          1

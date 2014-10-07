@@ -1,0 +1,8 @@
+;#ifndef __defs__
+;#define __defs__
+;
+;#define notLED PORTB.3
+;#define iON 0
+;#define iOFF 1
+;
+;#endif

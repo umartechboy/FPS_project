@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:453D075D
+NODE:I LEVEL:0 LINE:1 "C:\cvavr2053\inc\mega8.h"
+NODE:I LEVEL:0 LINE:2 "C:\cvavr2053\inc\stdlib.h"
+NODE:I LEVEL:0 LINE:3 "C:\cvavr2053\inc\delay.h"
+NODE:V LEVEL:0 LINE:5 "adc_data -> R6,R7"
+NODE:M LEVEL:0 LINE:6 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:9 "adc_isr(void)"
+NODE:F LEVEL:0 LINE:17 "read_adc_(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:34 "read_adc__(unsigned char adc_input)"
+NODE:M LEVEL:0 LINE:62 "adcSamples"
+NODE:F LEVEL:0 LINE:63 "read_adc(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:100 "adc_init(void)"
